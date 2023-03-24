@@ -1,13 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>RM Project 1</title>
+    <title>RM-Project1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/e0f017ccbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <!-- *******************************HEADER SECTION *******************************-->
+    <header>
+        <div class="header" id="home">
+            <div class="header__image"><img
+                    src="https://www.pngitem.com/pimgs/m/43-434438_admin-person-man-people-customer-user-human-transparent.png"
+                    alt="header image small" loading="lazy"></div>
+            <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-dark navbar-dark"
+                style="background-color:rgba(51, 51, 51, 0.3) !important; background-image: url('/images/pexels-adrien-olichon-3137073.jpg');">
+
+                <div class="container-fluid">
+                    <a href="#" class="header-brand navbar-brand">RM<span class="header-brand__span">WD47P</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="#home">Home</a> </li>
+                            <li class="nav-item"><a href="#about">About</a> </li>
+                            <li class="nav-item"><a href="#portfolio">Portfolio</a> </li>
+                            <li class="nav-item"><a href="#contact">Contact</a> </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                              </a>
+                              <ul class="dropdown-menu" style="background-color: rgba(0, 0, 255, 0.182);">
+                                <li><a class="dropdown-item" href="#">Log In</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Desktop -->
+            <div class="header-text">
+                <h1>Regie Marzan</h1>
+                <h2>Freelance Front-end Web Developer</h2>
+            </div>
+            <!-- Mobile 600 max-width -->
+            <div class="header-text2">
+                <h1>Web Developer</h1>
+                <h2>Hi I am, <span>Regie Marzan</span>
+                    <br>Let's Connect
+                </h2>
+            </div>
+        </div>
+    </header>
+    <!-- *******************************ABOUT ME SECTION *******************************-->
+    <section>
+        <div class="about" 
+        id="about"
+        style="background-image: linear-gradient(rgba(115, 101, 125, 0.357),rgba(113, 69, 140, 0.712)), url('https://images.pexels.com/photos/8715870/pexels-photo-8715870.jpeg?cs=srgb&dl=pexels-katya-wolf-8715870.jpg&fm=jpg&_gl=1*1vu1ba2*_ga*MjEzNDk0Njk4OC4xNjc2Njk5Nzk4*_ga_8JE65Q40S6*MTY3OTM5MjU4Mi4xMS4xLjE2NzkzOTI1ODMuMC4wLjA.'); background-position: center; background-size: cover; background-repeat: no-repeat; border: 5px solid rgba(113, 69, 140); ">
+
+            <div class="about-img">
+                <img src="https://www.pngitem.com/pimgs/m/43-434438_admin-person-man-people-customer-user-human-transparent.png"
+                    alt="mobile mode for about page" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h2>ABOUT ME</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt
+                    quos enim quibusdam sint? Minus aperiam incidunt fugiat aspernatur,
+                    repellat mollitia esse officia asperiores expedita, earum ullam possimus
+                    voluptatum nulla!</p>
+            </div>
+            <div class="about-skills">
+                <h3 class="about-skills_h3-1">Skills</h3>
+                <h3 class="about-skills_h3-2">Habits</h3>
+                <h3 class="about-skills_h3-3">Education</h3>
+            </div>
+            
+            <div class="about-content">
+              <div class="column">
+                <h2>SKILLS</h2>
+                <ul>
+                  <li>Typing (Amatuer)</li>
+                  <li>Cooking (Basic)</li>
+                  <li>Household (Basic)</li>
+                  <li>Carpenter (Basic)</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h2>Habits</h2>
+                <ul>
+                  <li>Drawing (Dormant)</li>
+                  <li>Reading Comics</li>
+                  <li>Playing Games like Sfw's</li>
+                  <li>Sense of Humor</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h2>Education</h2>
+                <ul>
+                <li>ICT (Information Computer, and Technology) </li>
+                <li>BSIT (Bachelor of Scholar in Information Technology) </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *******************************MY PORTFOLIO SECTION *******************************-->
+    <section>
+        <div class="portfolio" id="portfolio" style=" background-image: url('./images/pexels-pixabay-301792.jpg'); background-size: cover; background-position: center; height: 50%; width: 100%; ">
+
+            <h2>MY PORTFOLIO</h2>
+            <div class="portfolio__container">
+              <div class="portfolio__img"><a
+                href="https://regiem14.github.io/FirstWebPage/"
+                target="_blank"><img src="./images/FirstWebPage.PNG" alt="first web page"
+                    loading="lazy"></a>
+                </div>
+                <div class="portfolio__img"><a
+                href="https://regiem14.github.io/RM-BasicLayout-SemanticElement/"
+                target="blank">
+                <img src="./images/Regie-BSLE.PNG" alt="regie RBSLE page" 
+                  loading="lazy"></a>
+                </div>                                   
+                <div class="portfolio__img"><a
+                href="https://regiem14.github.io/Regie-Tea-Shop/"
+                target="_blank"><img src="./images/Regie-Tea.PNG" alt="Regie Tea shop page"
+                  loading="lazy"></a>
+                </div>
+            </div>
+            <a href="#" class="portfolio-btn">See More</a>
+        </div>
+    </section>
+    <!-- *******************************CONTACT SECTION *******************************-->
+    <section>
+        <div class="contact" id="contact">
+            <div class="contact__container">
+                <div class="contact__row">
+                    <div class="contact-left">
+                        <h2>Contact Me</h2>
+                        <p><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>lonebeginner@email.com</p>
+                        <p><i class="fa-solid fa-phone"></i>09560000000</p>
+                        <div class="contact-left__icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="downloads/sample-cv.pdf" download class="contact__btn contact__btn--1">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="#">
+                            <input type="text" placeholder="Your name" required>
+                            <input type="text" placeholder="Your email" required>
+                            <textarea id="comment" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="contact__btn contact__btn--2">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *******************************FOOTER SECTION *******************************-->
+    <footer>
+        <p>&#169; Copyright 2023 March</p>
+        <p>Regie Marzan</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>

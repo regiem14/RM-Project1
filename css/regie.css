@@ -7,7 +7,7 @@
 /********************************ELEMENT SELECTORS OR GLOBAL STYLES ********************************/
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     color: rgb(38, 26, 41);
 
 }
@@ -71,8 +71,7 @@ nav ul li a {
 
 .about {
     background-color: rgb(113, 69, 140);
-    height: 100vh;
-    border: 3px solid;
+    height: 80vh;
 }
 
 .about-text {
@@ -81,22 +80,6 @@ nav ul li a {
     text-align: center;
     width: 50%;
 }
-
-.about-content{
-    padding-top: 10%;
-    padding-left: 25%;
-    content: "";
-    display: table;
-    clear: both;    
-}
-
-.column{
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px;    
-}
-
 
 .about-text h2 {
     font-size: 60px;
@@ -122,7 +105,6 @@ nav ul li a {
 
 .about-skills h3 {
     padding-right: 5%;
-    align-items: center;
 }
 
 .about-skills_h3-1 {
@@ -139,8 +121,8 @@ nav ul li a {
 
 /*******************************MY PORTFOLIO SECTION *******************************/
 .portfolio {
-    height: 80vh;
-    padding: 6% 0;
+    height: 100vh;
+    padding: 50px 0;
     text-align: center;
     color: #362D2D;
     font-size: 60px;
@@ -158,7 +140,6 @@ nav ul li a {
 .portfolio h2 {
     margin-top: 1%;
     font-size: 60px;
-    color: aqua;
 }
 
 .portfolio__img {
@@ -193,6 +174,7 @@ nav ul li a {
 .contact {
     background-color: rgb(169, 215, 122);
     height: 100vh;
+    margin-top: 300px;
     padding: 5%;
     color: #fff;
 }
@@ -273,7 +255,7 @@ form textarea {
     background: whitesmoke;
     padding: 15px;
     margin: 15px 0;
-    color: black ;
+    color: white;
     font-size: 18px;
     border: 6px;
 }
@@ -294,12 +276,14 @@ form textarea {
 /*******************************FOOTER SECTION *******************************/
 
 footer {
-    height: 30vh;
+    height: 15vh;
     width: 100%;
     text-align: center;
     padding: 3% 0;
     background-color: #fff;
     font-weight: 300;
+
+
 }
 
 
@@ -318,16 +302,17 @@ footer {
     display: none;
 }
 
+.about__content{
+    display: none;
+}
 /*-------------------------MEDIA QUERIES -------------------------*/
 
 /*-------------------------HERO SECTION -------------------------*/
 @media only screen and (max-width: 600px) {
 
     .header {
-        background-image: url('https://images.pexels.com/photos/8168565/pexels-photo-8168565.png?cs=srgb&dl=pexels-giuseppe-didio-8168565.jpg&fm=jpg&_gl=1*1tebhp*_ga*MjEzNDk0Njk4OC4xNjc2Njk5Nzk4*_ga_8JE65Q40S6*MTY3OTI5MjUzMS43LjEuMTY3OTI5Mzk5My4wLjAuMA..');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: none;
+        background-color: rgb(113, 69, 140);
     }
 
     .header__image {
@@ -336,9 +321,8 @@ footer {
 
     .header__image img {
         object-fit: cover;
-        border: solid #20e700 10px;
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         height: 200px;
@@ -350,10 +334,10 @@ footer {
         display: none;
     }
 
-    .header-text2 {
+    .header-text--2 {
         display: block;
         position: absolute;
-        top: 63%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: aqua;
@@ -375,8 +359,8 @@ footer {
 /*****BREAKPOINT MOBILE 600px**************/
 @media only screen and (max-width: 600px) {
     .about {
-        padding-top: 30%;
-        height: 120vh;
+        padding-top: 10%;
+        height: 150vh;
     }
 
     .about-img {
@@ -386,7 +370,6 @@ footer {
     }
 
     .about-img img {
-        position: relative;
         height: 200px;
         width: 200px;
         border-radius: 50%;
@@ -401,35 +384,33 @@ footer {
         -moz-box-shadow: 10px 10px 5px 0px rgba(216,150,242,0.75);
     }
 
-    
+    .about-text{
+        width: 80%;
+    }
 
-    .about-text h2{
+   .about-text h2{
         font-size: 50px;
         padding-top: 0;
-    }
+
+   }
 
    .about-text p{
     text-align: left;
    }
-   
 
-   .about-content{
+   .about__content{
     margin: 5% auto;
-    color: white;
-    padding-left: 0%; 
+    color: white; 
+    
    }
 
-   .about-content h1{
-    padding-top: 10%;
-   }
-
-   .about-content p{
+   .about__content p{
     margin: 5% auto;
     margin-left: 10%;
 
    }
 
-   .about-para{
+   .about_para1{
     color: aqua;
    }
 }
@@ -437,7 +418,7 @@ footer {
 /*-------------------------PORTFOLIO SECTION -------------------------*/
 @media only screen and (max-width: 600px){
    .portfolio{
-      height: 100%;
+      height: 180vh;
    }   
 
    .portfolio h2{
@@ -453,23 +434,15 @@ footer {
         margin-bottom: 5%;
    }
 
-   .portfolio__container {
-    display: flex;
-    grid-gap: 100px;
-    padding: 5%;
-    margin-top: 80px;
-    flex-direction: column;
-   }
-
-    .portfolio__btn {
+   .portfolio__btn{
     font-size: 4rem;
-    }
+   }
 }
 
 /*-------------------------CONTACT SECTION -------------------------*/
  @media only screen and (max-width: 600px){
     .contact{
-        height: 100vh;
+        height: 200vh;
     }
 
     .contact__row{
@@ -478,14 +451,5 @@ footer {
 
     .contact-left, .contact-right {
         flex-basis: 100%;
-    }
-
-    footer {
-        height: 6vh;
-        width: 101%;
-        text-align: center;
-        padding: 3% 0;
-        background-color: #fff;
-        font-weight: 300;
     }
 } 

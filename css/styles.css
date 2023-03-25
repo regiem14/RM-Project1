@@ -295,10 +295,10 @@ form textarea {
 /*******************************FOOTER SECTION *******************************/
 
 footer {
-    height: 30vh;
+    height: 10vh;
     width: 100%;
     text-align: center;
-    padding: 3% 0;
+    padding: 1% 0;
     background-color: #fff;
     font-weight: 300;
 }

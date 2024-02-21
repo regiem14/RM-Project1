@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
 
 .header {
     height: 100vh;
-    background-image:linear-gradient(rgba(161, 180, 237, 0.48), rgba(133, 155, 239, 0.48)), url('https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/88169131_2755184177892268_6604154766182318080_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9OA0xbBDhzcAX9vTm71&_nc_ht=scontent-nrt1-1.xx&oh=00_AfC39rHGRva1BtmDS5_OfDiEUkokwWg5S5SvuUzolvWkQw&oe=643289F4');
+    background-image:linear-gradient(rgba(161, 180, 237, 0.48), rgba(133, 155, 239, 0.48)), url('../images/BackgroundImg.jpg');
     background-size: cover;
     background-position: center;
 }
